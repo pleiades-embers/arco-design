@@ -9,7 +9,12 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-0"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -18,6 +23,7 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Create an item"
@@ -25,9 +31,11 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -56,7 +64,12 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-1"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -125,6 +138,7 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <span
@@ -171,7 +185,12 @@ exports[`renders Select/demo/allow-create.md correctly 1`] = `
 
 exports[`renders Select/demo/async-data.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-2"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+  role="combobox"
   style="width:345px"
   tabindex="0"
 >
@@ -203,6 +222,7 @@ exports[`renders Select/demo/async-data.md correctly 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -237,7 +257,12 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-3"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -246,6 +271,7 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Please select"
@@ -254,9 +280,11 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -284,7 +312,13 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-4"
+      aria-disabled="true"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default arco-select-disabled"
+      role="combobox"
       style="width:154px"
       tabindex="-1"
     >
@@ -293,6 +327,7 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
         title="Beijing"
       >
         <input
+          aria-hidden="true"
           autocomplete="off"
           class="arco-select-view-input arco-select-hidden"
           disabled=""
@@ -302,11 +337,13 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
           value="Beijing"
         />
         <span
+          aria-hidden="false"
           class="arco-select-view-value"
         >
           Beijing
         </span>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -335,7 +372,12 @@ exports[`renders Select/demo/basic.md correctly 1`] = `
 
 exports[`renders Select/demo/clear.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-5"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-single arco-select-size-default"
+  role="combobox"
   style="width:154px"
   tabindex="0"
 >
@@ -344,6 +386,7 @@ exports[`renders Select/demo/clear.md correctly 1`] = `
     title=""
   >
     <input
+      aria-hidden="false"
       autocomplete="off"
       class="arco-select-view-input"
       placeholder="Please select"
@@ -352,9 +395,11 @@ exports[`renders Select/demo/clear.md correctly 1`] = `
       value=""
     />
     <span
+      aria-hidden="true"
       class="arco-select-view-value arco-select-hidden"
     />
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -388,7 +433,12 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-6"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -397,6 +447,7 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Please select"
@@ -405,9 +456,11 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -435,7 +488,12 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-7"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -444,6 +502,7 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Please select"
@@ -452,9 +511,11 @@ exports[`renders Select/demo/custom-popup-width.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -499,7 +560,12 @@ exports[`renders Select/demo/custom-trigger.md correctly 1`] = `
 
 exports[`renders Select/demo/darggable.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-9"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+  role="combobox"
   style="width:345px"
   tabindex="0"
 >
@@ -644,6 +710,7 @@ exports[`renders Select/demo/darggable.md correctly 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -671,7 +738,12 @@ exports[`renders Select/demo/darggable.md correctly 1`] = `
 
 exports[`renders Select/demo/dropdown-render.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-10"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-single arco-select-size-default"
+  role="combobox"
   style="width:240px"
   tabindex="0"
 >
@@ -680,6 +752,7 @@ exports[`renders Select/demo/dropdown-render.md correctly 1`] = `
     title=""
   >
     <input
+      aria-hidden="false"
       autocomplete="off"
       class="arco-select-view-input"
       placeholder="Select city"
@@ -688,9 +761,11 @@ exports[`renders Select/demo/dropdown-render.md correctly 1`] = `
       value=""
     />
     <span
+      aria-hidden="true"
       class="arco-select-view-value arco-select-hidden"
     />
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -718,7 +793,12 @@ exports[`renders Select/demo/dropdown-render.md correctly 1`] = `
 exports[`renders Select/demo/group.md correctly 1`] = `
 <div>
   <div
+    aria-autocomplete="list"
+    aria-controls="arco-select-popup-11"
+    aria-expanded="false"
+    aria-haspopup="listbox"
     class="arco-select arco-select-single arco-select-show-search arco-select-size-default"
+    role="combobox"
     style="width:154px"
     tabindex="0"
   >
@@ -727,6 +807,7 @@ exports[`renders Select/demo/group.md correctly 1`] = `
       title=""
     >
       <input
+        aria-hidden="false"
         autocomplete="off"
         class="arco-select-view-input"
         placeholder="Select drink"
@@ -734,9 +815,11 @@ exports[`renders Select/demo/group.md correctly 1`] = `
         value=""
       />
       <span
+        aria-hidden="true"
         class="arco-select-view-value arco-select-hidden"
       />
       <div
+        aria-hidden="true"
         class="arco-select-suffix"
       >
         <div
@@ -765,7 +848,12 @@ exports[`renders Select/demo/group.md correctly 1`] = `
 
 exports[`renders Select/demo/hide-selected-option.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-12"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+  role="combobox"
   style="width:345px;margin-right:20px"
   tabindex="0"
 >
@@ -797,6 +885,7 @@ exports[`renders Select/demo/hide-selected-option.md correctly 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -831,7 +920,12 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
     style="margin-bottom:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-13"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -919,6 +1013,7 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <span
@@ -965,7 +1060,12 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
     style="margin-bottom:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-14"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -1063,6 +1163,7 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <span
@@ -1108,7 +1209,12 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-15"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -1143,6 +1249,7 @@ exports[`renders Select/demo/multiple.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <span
@@ -1196,7 +1303,12 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-16"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default arco-select-no-border"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -1205,6 +1317,7 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Please select"
@@ -1213,9 +1326,11 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1243,7 +1358,13 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-17"
+      aria-disabled="true"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default arco-select-disabled arco-select-no-border"
+      role="combobox"
       style="width:154px"
       tabindex="-1"
     >
@@ -1252,6 +1373,7 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
         title="Beijing"
       >
         <input
+          aria-hidden="true"
           autocomplete="off"
           class="arco-select-view-input arco-select-hidden"
           disabled=""
@@ -1261,11 +1383,13 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
           value="Beijing"
         />
         <span
+          aria-hidden="false"
           class="arco-select-view-value"
         >
           Beijing
         </span>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1294,7 +1418,12 @@ exports[`renders Select/demo/no-border.md correctly 1`] = `
 
 exports[`renders Select/demo/on-popup-scroll.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-18"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+  role="combobox"
   style="width:345px"
   tabindex="0"
 >
@@ -1326,6 +1455,7 @@ exports[`renders Select/demo/on-popup-scroll.md correctly 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -1360,7 +1490,12 @@ exports[`renders Select/demo/options.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-19"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -1369,6 +1504,7 @@ exports[`renders Select/demo/options.md correctly 1`] = `
         title="Beijing"
       >
         <input
+          aria-hidden="true"
           autocomplete="off"
           class="arco-select-view-input arco-select-hidden"
           placeholder="Select city"
@@ -1377,11 +1513,13 @@ exports[`renders Select/demo/options.md correctly 1`] = `
           value="Beijing"
         />
         <span
+          aria-hidden="false"
           class="arco-select-view-value"
         >
           Beijing
         </span>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1409,7 +1547,12 @@ exports[`renders Select/demo/options.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-20"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -1497,6 +1640,7 @@ exports[`renders Select/demo/options.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1533,7 +1677,12 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-21"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -1542,6 +1691,7 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
         title="Beijing"
       >
         <input
+          aria-hidden="true"
           autocomplete="off"
           class="arco-select-view-input arco-select-hidden"
           placeholder="Select Province"
@@ -1550,11 +1700,13 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
           value="Beijing"
         />
         <span
+          aria-hidden="false"
           class="arco-select-view-value"
         >
           Beijing
         </span>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1582,7 +1734,12 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-22"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -1591,6 +1748,7 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="true"
           autocomplete="off"
           class="arco-select-view-input arco-select-hidden"
           placeholder="Select city"
@@ -1599,9 +1757,11 @@ exports[`renders Select/demo/relative.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="false"
           class="arco-select-view-value"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1637,7 +1797,12 @@ exports[`renders Select/demo/render-format.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-23"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -1646,6 +1811,7 @@ exports[`renders Select/demo/render-format.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Select city"
@@ -1654,9 +1820,11 @@ exports[`renders Select/demo/render-format.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1684,7 +1852,12 @@ exports[`renders Select/demo/render-format.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-24"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -1802,6 +1975,7 @@ exports[`renders Select/demo/render-format.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -1835,7 +2009,12 @@ exports[`renders Select/demo/render-tag.md correctly 1`] = `
     style="margin-bottom:20px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-25"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="max-width:350px;margin-right:20px"
       tabindex="0"
     >
@@ -1915,6 +2094,7 @@ exports[`renders Select/demo/render-tag.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <span
@@ -1968,7 +2148,12 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-26"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -1977,6 +2162,7 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Select city"
@@ -1984,9 +2170,11 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -2016,7 +2204,12 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
     style="margin-right:24px"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-27"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -2025,6 +2218,7 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Filter option"
@@ -2032,9 +2226,11 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -2063,7 +2259,12 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
     class="arco-space-item"
   >
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-28"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:154px"
       tabindex="0"
     >
@@ -2072,6 +2273,7 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Retain input value"
@@ -2079,9 +2281,11 @@ exports[`renders Select/demo/show-search.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -2175,7 +2379,12 @@ exports[`renders Select/demo/size.md correctly 1`] = `
   </div>
   <div>
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-29"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-single arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px;margin-bottom:20px"
       tabindex="0"
     >
@@ -2184,6 +2393,7 @@ exports[`renders Select/demo/size.md correctly 1`] = `
         title=""
       >
         <input
+          aria-hidden="false"
           autocomplete="off"
           class="arco-select-view-input"
           placeholder="Please select"
@@ -2191,9 +2401,11 @@ exports[`renders Select/demo/size.md correctly 1`] = `
           value=""
         />
         <span
+          aria-hidden="true"
           class="arco-select-view-value arco-select-hidden"
         />
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -2219,7 +2431,12 @@ exports[`renders Select/demo/size.md correctly 1`] = `
     </div>
     <br />
     <div
+      aria-autocomplete="list"
+      aria-controls="arco-select-popup-30"
+      aria-expanded="false"
+      aria-haspopup="listbox"
       class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+      role="combobox"
       style="width:345px"
       tabindex="0"
     >
@@ -2251,6 +2468,7 @@ exports[`renders Select/demo/size.md correctly 1`] = `
           </div>
         </div>
         <div
+          aria-hidden="true"
           class="arco-select-suffix"
         >
           <div
@@ -2280,7 +2498,12 @@ exports[`renders Select/demo/size.md correctly 1`] = `
 
 exports[`renders Select/demo/token-separators.md correctly 1`] = `
 <div
+  aria-autocomplete="list"
+  aria-controls="arco-select-popup-31"
+  aria-expanded="false"
+  aria-haspopup="listbox"
   class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+  role="combobox"
   style="width:345px"
   tabindex="0"
 >
@@ -2312,6 +2535,7 @@ exports[`renders Select/demo/token-separators.md correctly 1`] = `
       </div>
     </div>
     <div
+      aria-hidden="true"
       class="arco-select-suffix"
     >
       <div
@@ -2345,7 +2569,12 @@ Array [
     10000 items
   </h6>,
   <div
+    aria-autocomplete="list"
+    aria-controls="arco-select-popup-32"
+    aria-expanded="false"
+    aria-haspopup="listbox"
     class="arco-select arco-select-multiple arco-select-show-search arco-select-size-default"
+    role="combobox"
     style="width:345px"
     tabindex="0"
   >
@@ -2377,6 +2606,7 @@ Array [
         </div>
       </div>
       <div
+        aria-hidden="true"
         class="arco-select-suffix"
       >
         <div

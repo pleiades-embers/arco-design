@@ -272,7 +272,12 @@ Array [
       class="arco-pagination-option"
     >
       <div
+        aria-autocomplete="list"
+        aria-controls="arco-select-popup-0"
+        aria-expanded="false"
+        aria-haspopup="listbox"
         class="arco-select arco-select-single arco-select-size-default"
+        role="combobox"
         tabindex="0"
       >
         <div
@@ -280,6 +285,7 @@ Array [
           title="10 条/页"
         >
           <input
+            aria-hidden="true"
             autocomplete="off"
             class="arco-select-view-input arco-select-hidden"
             style="width:100%;pointer-events:none"
@@ -287,11 +293,13 @@ Array [
             value="10 条/页"
           />
           <span
+            aria-hidden="false"
             class="arco-select-view-value"
           >
             10 条/页
           </span>
           <div
+            aria-hidden="true"
             class="arco-select-suffix"
           >
             <div
@@ -996,7 +1004,12 @@ Array [
       style="margin-right:8px"
     >
       <div
+        aria-autocomplete="list"
+        aria-controls="arco-cascader-popup-0"
+        aria-expanded="false"
+        aria-haspopup="listbox"
         class="arco-cascader arco-cascader-single arco-cascader-size-default"
+        role="combobox"
         style="width:200px"
         tabindex="0"
       >
@@ -1005,6 +1018,7 @@ Array [
           title=""
         >
           <input
+            aria-hidden="false"
             autocomplete="off"
             class="arco-cascader-view-input"
             placeholder="Cascader"
@@ -1013,9 +1027,11 @@ Array [
             value=""
           />
           <span
+            aria-hidden="true"
             class="arco-cascader-view-value arco-cascader-hidden"
           />
           <div
+            aria-hidden="true"
             class="arco-cascader-suffix"
           >
             <div
@@ -1044,7 +1060,12 @@ Array [
       style="margin-right:8px"
     >
       <div
+        aria-autocomplete="list"
+        aria-controls="arco-select-popup-1"
+        aria-expanded="false"
+        aria-haspopup="listbox"
         class="arco-select arco-select-single arco-select-size-default"
+        role="combobox"
         style="width:200px"
         tabindex="0"
       >
@@ -1053,6 +1074,7 @@ Array [
           title=""
         >
           <input
+            aria-hidden="false"
             autocomplete="off"
             class="arco-select-view-input"
             placeholder="Select"
@@ -1061,9 +1083,11 @@ Array [
             value=""
           />
           <span
+            aria-hidden="true"
             class="arco-select-view-value arco-select-hidden"
           />
           <div
+            aria-hidden="true"
             class="arco-select-suffix"
           >
             <div
@@ -1091,7 +1115,12 @@ Array [
       class="arco-space-item"
     >
       <div
+        aria-autocomplete="list"
+        aria-controls="arco-tree-select-popup-0"
+        aria-expanded="false"
+        aria-haspopup="listbox"
         class="arco-tree-select arco-tree-select-single arco-tree-select-size-default"
+        role="combobox"
         style="width:200px"
         tabindex="0"
       >
@@ -1100,6 +1129,7 @@ Array [
           title=""
         >
           <input
+            aria-hidden="false"
             autocomplete="off"
             class="arco-tree-select-view-input"
             placeholder="TreeSelect"
@@ -1108,9 +1138,11 @@ Array [
             value=""
           />
           <span
+            aria-hidden="true"
             class="arco-tree-select-view-value arco-tree-select-hidden"
           />
           <div
+            aria-hidden="true"
             class="arco-tree-select-suffix"
           >
             <div

@@ -4075,7 +4075,12 @@ exports[`renders DatePicker/demo/timezone.md correctly 1`] = `
         style="margin-right:8px"
       >
         <div
+          aria-autocomplete="list"
+          aria-controls="arco-select-popup-0"
+          aria-expanded="false"
+          aria-haspopup="listbox"
           class="arco-select arco-select-single arco-select-size-default"
+          role="combobox"
           tabindex="0"
         >
           <div
@@ -4083,6 +4088,7 @@ exports[`renders DatePicker/demo/timezone.md correctly 1`] = `
             title="Asia/Shanghai"
           >
             <input
+              aria-hidden="true"
               autocomplete="off"
               class="arco-select-view-input arco-select-hidden"
               style="width:100%;pointer-events:none"
@@ -4090,11 +4096,13 @@ exports[`renders DatePicker/demo/timezone.md correctly 1`] = `
               value="Asia/Shanghai"
             />
             <span
+              aria-hidden="false"
               class="arco-select-view-value"
             >
               Asia/Shanghai
             </span>
             <div
+              aria-hidden="true"
               class="arco-select-suffix"
             >
               <div
@@ -4298,7 +4306,12 @@ exports[`renders DatePicker/demo/utcOffset.md correctly 1`] = `
         style="margin-right:8px"
       >
         <div
+          aria-autocomplete="list"
+          aria-controls="arco-select-popup-1"
+          aria-expanded="false"
+          aria-haspopup="listbox"
           class="arco-select arco-select-single arco-select-size-default"
+          role="combobox"
           tabindex="0"
         >
           <div
@@ -4306,6 +4319,7 @@ exports[`renders DatePicker/demo/utcOffset.md correctly 1`] = `
             title="UTC "
           >
             <input
+              aria-hidden="true"
               autocomplete="off"
               class="arco-select-view-input arco-select-hidden"
               style="width:100%;pointer-events:none"
@@ -4313,11 +4327,13 @@ exports[`renders DatePicker/demo/utcOffset.md correctly 1`] = `
               value="UTC "
             />
             <span
+              aria-hidden="false"
               class="arco-select-view-value"
             >
               UTC 
             </span>
             <div
+              aria-hidden="true"
               class="arco-select-suffix"
             >
               <div
