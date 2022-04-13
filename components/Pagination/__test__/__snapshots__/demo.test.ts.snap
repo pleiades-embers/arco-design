@@ -643,27 +643,10 @@ exports[`renders Pagination/demo/count-more.md correctly 1`] = `
       1
     </li>
     <li
-      aria-label="向前 5 页"
-      class="arco-pagination-item arco-pagination-item-jumper"
+      aria-label="第 2 页"
+      class="arco-pagination-item"
     >
-      <svg
-        aria-hidden="true"
-        class="arco-icon arco-icon-more"
-        fill="none"
-        focusable="false"
-        stroke="currentColor"
-        stroke-width="4"
-        viewBox="0 0 48 48"
-      >
-        <path
-          d="M38 25v-2h2v2h-2ZM23 25v-2h2v2h-2ZM8 25v-2h2v2H8Z"
-          fill="currentColor"
-          stroke="none"
-        />
-        <path
-          d="M38 25v-2h2v2h-2ZM23 25v-2h2v2h-2ZM8 25v-2h2v2H8Z"
-        />
-      </svg>
+      2
     </li>
     <li
       aria-label="第 3 页"
@@ -1045,7 +1028,7 @@ exports[`renders Pagination/demo/show-more.md correctly 1`] = `
       2
     </li>
     <li
-      aria-label="向后 5 页"
+      aria-label="向后 1 页"
       class="arco-pagination-item arco-pagination-item-jumper"
     >
       <svg

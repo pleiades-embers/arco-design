@@ -21,6 +21,13 @@ function getAllPages(pageSize, total) {
   return Math.ceil(total / pageSize);
 }
 
+function getBufferSize(bufferSize, allPages) {
+  const min = 0;
+  const max = Math.floor(allPages / 2) - 1;
+  const newBufferSize = Math.max(bufferSize, min);
+  return Math.min(newBufferSize, max);
+}
+
 const defaultProps: PaginationProps = {
   total: 0,
   pageSizeChangeResetCurrent: true,
@@ -38,12 +45,12 @@ function Pagination(baseProps: PaginationProps, ref) {
     total: propTotal,
     pageSize: propPageSize,
     current: propCurrent,
-    bufferSize,
     showMore: propShowMore,
     pageSizeChangeResetCurrent,
     defaultCurrent,
     defaultPageSize,
   } = props;
+
   const [current, setCurrent] = useState(propCurrent || defaultCurrent || _defaultCurrent);
   const [pageSize, setPageSize] = useState(propPageSize || defaultPageSize || _defaultPageSize);
   const [total, setTotal] = useState(propTotal);
@@ -149,6 +156,7 @@ function Pagination(baseProps: PaginationProps, ref) {
   let renderPager: ReactElement;
   const pageList: ReactElement[] = [];
   const allPages = getAllPages(pageSize, total);
+  const bufferSize = getBufferSize(props.bufferSize, allPages);
 
   if (hideOnSinglePage && allPages <= 1) {
     return null;
@@ -188,8 +196,8 @@ function Pagination(baseProps: PaginationProps, ref) {
       </ul>
     );
   } else {
-    // only show page number when total number is smaller than 5 + bufferSize * 2;
-    if (allPages < 6 + bufferSize * 2) {
+    // only show page number when total number is smaller than 6 + bufferSize * 2;
+    if (allPages < 6 + bufferSize) {
       for (let i = 1; i <= allPages; i++) {
         pageList.push(<PageItem {...pagerProps} key={i} pageNum={i} />);
       }
@@ -198,17 +206,22 @@ function Pagination(baseProps: PaginationProps, ref) {
       let right = allPages;
       let hasJumpPre = true;
       let hasJumpNext = true;
-      if (current <= 2 * bufferSize) {
+      // 确定左边是否需要展示...
+      // ... 至少表示省略2页
+      // current  < bufferSize + ...省略的2页 + 初始第一页时，不需要展示前边的省略标识。
+      if (current <= bufferSize + 2 + 1) {
         hasJumpPre = false;
         left = 1;
-        right = Math.max(2 * bufferSize + 1, 2 + current);
-      } else if (allPages - current <= 3) {
+        right = Math.max(2 * bufferSize + 1, bufferSize + current);
+
+        // current > allPages - ... 省略的2页 + bufferSize 时，不需要现实后面省略的标识。
+      } else if (current >= allPages - 2 - bufferSize) {
         hasJumpNext = false;
         right = allPages;
-        left = Math.min(allPages - 2 * bufferSize, current - 2);
+        left = Math.min(allPages - 2 * bufferSize, current - bufferSize);
       } else {
-        right = current + 2;
-        left = current - 2;
+        right = current + bufferSize;
+        left = current - bufferSize;
       }
 
       for (let i = left; i <= right; i++) {
