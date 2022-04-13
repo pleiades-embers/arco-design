@@ -12,28 +12,21 @@ interface AnimationIconProps {
   onComplete?: () => void; // 动画播放结束
 }
 
-const animationDuration = 500; // ms
+const animationDuration = 800;
 const animationDelay = 4000;
 
 function animationOut(
   target: NodeListOf<SVGPathElement>,
   config: AnimeAnimParams
 ): AnimeTimelineInstance {
-  const timeline = anime.timeline({
+  const timeline = anime.timeline();
+  timeline.add({
+    targets: target,
+    opacity: [1, 0],
+    delay: (el, i, l) => anime.stagger(animationDuration / l)(el, i, l),
     duration: animationDuration,
-    easing: 'linear',
   });
-  const delay = 600 / target.length;
-  target.forEach((node) => {
-    timeline.add(
-      {
-        targets: node,
-        opacity: [1, 0],
-        delay,
-      },
-      `-=${delay / 2}`
-    );
-  });
+
   timeline.complete = config.complete;
   return timeline;
 }
@@ -42,23 +35,13 @@ function animationIn(
   target: NodeListOf<SVGPathElement>,
   config: AnimeAnimParams
 ): AnimeTimelineInstance {
-  const timeline = anime.timeline({
-    duration: animationDuration / 2,
-    easing: 'linear',
-  });
-  const delay = 600 / target.length;
-  target.forEach((node) => {
-    timeline.add(
-      {
-        targets: node,
-        opacity: [0, 1],
-        delay,
-      },
-      `-=${delay / 2}`
-    );
-  });
+  const timeline = anime.timeline();
   timeline.add({
-    duration: animationDelay,
+    targets: target,
+    opacity: [0, 1],
+    delay: (el, i, l) => anime.stagger(animationDuration / l)(el, i, l),
+    complete: config.complete,
+    endDelay: animationDelay,
   });
   timeline.complete = config.complete;
   return timeline;
