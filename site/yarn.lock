@@ -317,14 +317,6 @@
     csstype "^3.0.8"
     tslib "^2.0.3"
 
-"@arco-design/arco-doc-site-components@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@arco-design/arco-doc-site-components/-/arco-doc-site-components-1.0.0.tgz#ce2cc40b2406cf7cdca55fedcaab026d1ac0b9c5"
-  integrity sha512-dMph7OiA8PL33csw2eEsQ0SO8quhB2jmg+XuerHnRQ2saR5wCXH1uUR6SFIK2JE0Mlv0MdkVnDpkCMZapdSsgA==
-  dependencies:
-    clipboard "^2.0.4"
-    codesandbox "^2.2.3"
-
 "@arco-design/arco-markdown-loader@^1.15.3":
   version "1.15.3"
   resolved "https://registry.npmjs.org/@arco-design/arco-markdown-loader/-/arco-markdown-loader-1.15.3.tgz#704f05ca0d1ebc3bd66386940718e4a289941535"
@@ -668,6 +660,16 @@
   resolved "https://registry.yarnpkg.com/@react-dnd/shallowequal/-/shallowequal-2.0.0.tgz#a3031eb54129f2c66b2753f8404266ec7bf67f0a"
   integrity sha512-Pc/AFTdwZwEKJxFJvlxrSmGe/di+aAOBn60sremrpLo6VI/6cmiUYNNwlI5KNYttg7uypzA3ILPMPgxB2GYZEg==
 
+"@types/animejs@^3.1.4":
+  version "3.1.4"
+  resolved "https://registry.npmjs.org/@types/animejs/-/animejs-3.1.4.tgz#92f90d1c800b9041b64a7da9da0e68e690146b0e"
+  integrity sha512-WUjeFT2SXd6intfE6cg6eL1jk/JL88JqM2gC4WqO4iHLmbCvHUq6aoLK13lGpDWs4FtS2PHoYraJZ0dEx99Dyg==
+
+"@types/aos@^3.0.4":
+  version "3.0.4"
+  resolved "https://registry.npmjs.org/@types/aos/-/aos-3.0.4.tgz#fd0dce430f18d118081aaced2c79c30617b15818"
+  integrity sha512-mna6Jd6bdK1NpwarLopGvXOgUoCfj0470IwLxuVOFDElTGI0JTd7xSGQ0AjbAEnHErC/b3fA9t2uB3IXVKmckA==
+
 "@types/d3-timer@^2.0.0":
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/@types/d3-timer/-/d3-timer-2.0.1.tgz#ffb6620d290624f3726aa362c0c8a4b44c8d7200"
@@ -762,6 +764,11 @@ algoliasearch@^4.0.0:
     "@algolia/requester-node-http" "4.12.0"
     "@algolia/transporter" "4.12.0"
 
+animejs@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.npmjs.org/animejs/-/animejs-3.2.1.tgz#de9fe2e792f44a777a7fdf6ae160e26604b0cdda"
+  integrity sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A==
+
 ansi-align@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/ansi-align/-/ansi-align-2.0.0.tgz#c36aeccba563b89ceb556f3690f0b1d9e3547f7f"
@@ -791,10 +798,27 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
+aos@^3.0.0-beta.6:
+  version "3.0.0-beta.6"
+  resolved "https://registry.npmjs.org/aos/-/aos-3.0.0-beta.6.tgz#75148e3be4bb1add53f5a1828623bf82b67691e9"
+  integrity sha512-VLWrpq8bfAWcetynVHMMrqdC+89Qq/Ym6UBJbHB4crIwp3RR8uq1dNGgsFzoDl03S43rlVMK+na3r5+oUCZsYw==
+  dependencies:
+    classlist-polyfill "^1.2.0"
+    lodash.debounce "^4.0.8"
+    lodash.throttle "^4.1.1"
+
 aproba@^1.1.1:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/aproba/-/aproba-1.2.0.tgz#6802e6264efd18c790a1b0d517f0f2627bf2c94a"
   integrity sha512-Y9J6ZjXtoYh8RnXVCMOU/ttDmk1aBjunq9vO0ta5x85WDQiQfUF9sIPBITdbiiIVcBo03Hi3jMxigBtsddlXRw==
+
+arco-doc-site-components@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.npmjs.org/arco-doc-site-components/-/arco-doc-site-components-1.0.0.tgz#c1abed39872eba8c27bfb175a61e4cd8f1aeb479"
+  integrity sha512-nPZCxUvF5d4iLqShviy1AGnLSJuvnEig6kBTi9pOUsgbWtyO3jBRBTVUqiSVtsDiqy13iWgcwLidkJPOcRI21Q==
+  dependencies:
+    clipboard "^2.0.4"
+    codesandbox "^2.2.3"
 
 argparse@^1.0.7:
   version "1.0.10"
@@ -1035,6 +1059,11 @@ ci-info@^1.5.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/ci-info/-/ci-info-1.6.0.tgz#2ca20dbb9ceb32d4524a683303313f0304b1e497"
   integrity sha512-vsGdkwSCDpWmP80ncATX7iea5DWQemg1UgCW5J8tqjU3lYw4FBYuj89J0CTVomA7BEfvSZd84GmHko+MxFQU2A==
+
+classlist-polyfill@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.npmjs.org/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
+  integrity sha1-k1vC39lFiodrJ5YXUUY4vKqWSi4=
 
 classnames@^2.2.6:
   version "2.3.1"
@@ -1994,6 +2023,11 @@ inquirer@^6.2.2:
     string-width "^2.1.0"
     strip-ansi "^5.1.0"
     through "^2.3.6"
+
+intersection-observer-polyfill@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.npmjs.org/intersection-observer-polyfill/-/intersection-observer-polyfill-0.1.0.tgz#f9ef8e5a6f3e0e8173d0c0fdb563e47a9dda233c"
+  integrity sha1-+e+OWm8+DoFz0MD9tWPkep3aIzw=
 
 invariant@^2.2.4:
   version "2.2.4"
